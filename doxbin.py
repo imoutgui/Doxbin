@@ -5,7 +5,7 @@ import json
 import re
 os.system ("clear")
 
-print ("\033[91m") #rojo
+print ("\033[91m")
 
 
 os.system ("figlet DOXBIN")
@@ -65,7 +65,7 @@ def normalizar_nombre(nombre):
 
 print("[*] Cargando bases de datos, por favor espera...")
 
-# 1. Cargar Alumnos"
+
 alumnos_dict = {}
 try:
     with open('alumnos_full.json', 'r', encoding='utf-8') as f:
@@ -77,7 +77,7 @@ try:
 except Exception as e:
     print(f"[!] Error al cargar alumnos: {e}")
 
-# 2. Cargar Docentes
+
 docentes_dict = {}
 try:
     with open('docentes.json', 'r', encoding='utf-8') as f:
@@ -99,7 +99,7 @@ try:
 except Exception as e:
     print(f"[!] Error al cargar docentes: {e}")
 
-# 3. Cargar Base ARG (CSV)
+
 arg_dict = {}
 try:
     with open('DB.ARG.csv', mode='r', encoding='utf-8', errors='ignore') as f:
@@ -110,7 +110,7 @@ try:
             p_apellido = fila.get('PRIMER_APELLIDO', '')
             o_apellidos = fila.get('OTROS_APELLIDOS', '')
             
-            # Limpiamos guiones o espacios vacíos
+           
             partes = [p_nombre, o_nombres, p_apellido, o_apellidos]
             nombre_completo = " ".join([p for p in partes if p and p != '-'])
             nombre_completo = " ".join(nombre_completo.split())
@@ -123,7 +123,7 @@ except Exception as e:
 
 print(f"[+] ¡Listo! Se cargaron {len(alumnos_dict)} alumnos, {len(docentes_dict)} docentes y {len(arg_dict)} registros de ARG.\n")
 
-# 4. Menú principal interactivo
+
 while True:
     print("=" * 45)
     print("          MENÚ PRINCIPAL - BÚSQUEDA")
@@ -189,7 +189,6 @@ paris = "paris danae edad 13 años telefono iphone provedor de internet megacabl
 juan_mateo = "juan mateo contreras edad 13 años ciudad silao gto escuela telesecundaria 530 nacio en mayo cuenta de instagram mateo contreras"
 raymundo_valencia = "raymundo valencia estrada actualmente trabaja de maestro en la telesecundaria 530 y la secundaria efrain huerta, ademas de tener un puesto de pollos dorados. esta casado y vive en sliao gto. el pasado 30 de junio hizo un en vivo mientras paso por la calle bailleres Pte. de silao gto, hiba en un carro"
 catalina = "catalina, vive en chile y en una villa llamada don pablo. tiene 13 años, un novio de 17 años y va a un liceo. su numero es +56 9 2970 9079. su ip es 179.60.67.159. su novio cumple años el 7 de octubre y es de guatemala"
-milton = "michelle gutierrez mendez edad 13 años. hizo una transicion y ahora se llama milton. vive en silao gto y va a una secundaria. su numero de telefono es +52 472 308 3587. vive en unos departamentos y tiene un android"
 jonathan = "jonathan guadalupe edad 13 años. escuela telesecundaria 530, tiene una cuenta de tiktok llamada jonathanguadalupe231, es de sliao gto y vive en https://maps.app.goo.gl/o3u2SwMQZDVXz91w7"
 fransisco_perez_quijas = "fransisco perez quijas, vive en leon guanajuato, tiene una hija y un hijo"
 coco_martinez = "coco martinez, vive en silao esta soltera y su facebook es coco martinez"
@@ -213,8 +212,6 @@ if opcion == "raymundo_valencia":
      print (raymundo_valencia)
 if opcion == "catalina":
      print (catalina)
-if opcion == "milton":
-     print (milton)
 if opcion == "jonathan":
      print (jonathan)
 if opcion == "fransisco perez quijas":
