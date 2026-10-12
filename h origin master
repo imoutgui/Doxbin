@@ -1,0 +1,85 @@
+[1mdiff --git a/doxbin.py b/doxbin.py[m
+[1mindex 0639294..3c68d20 100644[m
+[1m--- a/doxbin.py[m
+[1m+++ b/doxbin.py[m
+[36m@@ -1,3 +1,4 @@[m
+[32m+[m
+ import os[m
+ [m
+ [m
+[36m@@ -8,20 +9,57 @@[m [mprint ("\033[91m") #rojo[m
+ [m
+ os.system ("figlet DOXBIN")[m
+ [m
+[31m-print ("creado por THE DARK SOCIETY")[m
+[31m-print ("")[m
+[31m-print ("")[m
+[31m-print ("   (___)     ")[m
+[31m-print ("   (\,/)     ")[m
+[31m-print ("    \~/      ")[m
+[32m+[m[32mprint ("\033[0m")[m
+[32m+[m[32mprint ("                  ..                            ..     ")[m
+[32m+[m[32mprint ("                 ...                            ...  ")[m
+[32m+[m[32mprint ("                .   .       .............       .   . ")[m
+[32m+[m[32mprint ("               .    .     ..             ..     .    . ")[m
+[32m+[m[32mprint ("              .     .   ..                 ..   .     . ")[m
+[32m+[m[32mprint ("             .      .. .                     .  ..      . ")[m
+[32m+[m[32mprint ("            .        ...  :                : ....         . ")[m
+[32m+[m[32mprint ("            .           .                   .             . ")[m
+[32m+[m[32mprint ("            .           .                   .             . ")[m[41m [m
+[32m+[m[32mprint ("             .          .                   .            .")[m
+[32m+[m[32mprint ("      ..      `.........                     ...........'     .. ")[m
+[32m+[m[32mprint ("          .  ..    .                                   .   ..  . ")[m
+[32m+[m[32mprint ("           .   ..   .                                 .  ..   . ")[m
+[32m+[m[32mprint ("           .         .                               .        . ")[m
+[32m+[m[32mprint ("           .         .  :             '            : .        .  ")[m
+[32m+[m[32mprint ("           ..        .  .....        .    :      ... .       ..  ")[m
+[32m+[m[32mprint ("             .      .     .  `...    .      ...'  .   .     . ")[m[41m    [m
+[32m+[m[32mprint ("              .    .       :     `...    ...'    :     .   .  ")[m
+[32m+[m[32mprint ("                ..          ....'           ....'       ..     ")[m
+[32m+[m[32mprint ("                 .                                      .              ")[m
+[32m+[m[32mprint ("                  ..     ..        .    .        ..   ..  ")[m
+[32m+[m[32mprint ("                    ..      ...   .      .   ....   ..   ")[m
+[32m+[m[32mprint ("                     ..     .  ..  .    .  ..   . ..   ")[m
+[32m+[m[32mprint ("                     ..     .    .. .  .  ..   .  ..  ")[m[41m                    [m
+[32m+[m[32mprint ("                       ..    .       .   ..  .  ..  ")[m
+[32m+[m[32mprint ("                         ..   .  ........'  . ..   ")[m
+[32m+[m[32mprint ("                          ..     .         .  ..   ")[m
+[32m+[m[32mprint ("                           ..     `......'  ..    ")[m
+[32m+[m[32mprint ("                            ..'.         .'..    ")[m
+[32m+[m[32mprint ("                              .............   ")[m
+[32m+[m[32mprint ("                                .........     ")[m[41m                 [m
+ print ("")[m
+[32m+[m[32mprint ("\033[96m                   creado por the dark society")[m
+[32m+[m[32mprint ("\033[92m                           unetenos!!!!! ")[m
+[32m+[m[32mprint ("\033[91m                     seleccione una persona \033[0m")[m
+ print ("")[m
+[31m-print ("seleccione una persona")[m
+[31m-print ("")[m
+[32m+[m[32mprint ("                         _________________________      ")[m
+[32m+[m[32mprint ("                         |   busque o            |   ")[m
+[32m+[m[32mprint ("                         |         /             |  ")[m
+[32m+[m[32mprint ("                         —————————————————————————  ")[m
+[32m+[m
+[32m+[m[32mprint ("pruebas de ejemplo:(son personas reales y es su informacion real)")[m
+ print ("paris")[m
+ print ("juan_mateo")[m
+[31m-paris = "paris danae edad 12 años telefono iphone provedor de internet totalplay su tiktok es juzjuzudd127870 instagram ko0ki001 numero de telefono +52 472 105 4659 sangitario ciudad silao gto"[m
+[31m-juan_mateo = "juan mateo contreras edad 12 años ciudad silao gto escuela telesecundaria 530 nacio en mayo cuenta de instagram mateo contreras"[m
+[32m+[m[32mprint ("raymundo_valencia")[m
+[32m+[m[32mparis = "paris danae edad 13 años telefono iphone provedor de internet totalplay su tiktok es user4389115588 instagram ko0ki001 numero de telefono +52 472 105 4659 sangitario ciudad silao gto ademas cumple años el 23 de noviembre"[m
+[32m+[m[32mjuan_mateo = "juan mateo contreras edad 13 años ciudad silao gto escuela telesecundaria 530 nacio en mayo cuenta de instagram mateo contreras"[m
+[32m+[m[32mraymundo_valencia = "raymundo valencia estrada actualmente trabaja de maestro en la telesecundaria 530 y la secundaria efrain huerta, ademas de tener un puesto de pollos dorados. esta casado y vive en sliao gto. el pasado 30 de junio hizo un en vivo mientras paso por la calle bailleres Pte. de silao gto, hiba en un carro"[m
+[32m+[m[32mcatalina = "catalina, vive en chile y en una villa llamada don pablo. tiene 13 años, un novio de 17 años y va a un liceo. su numero es +56 9 2970 9079. su ip es 179.60.67.159. su novio cumple años el 7 de octubre y es de guatemala"[m
+[32m+[m[32mprint ("\033[91m")[m
+ [m
+ opcion = input ("a quien buscas?:")[m
+ [m
+[36m@@ -29,3 +67,7 @@[m [mif opcion == "paris":[m
+      print (paris)[m
+ if opcion == "juan_mateo":[m
+      print (juan_mateo)[m
+[32m+[m[32mif opcion == "raymundo_valencia":[m
+[32m+[m[32m     print (raymundo_valencia)[m
+[32m+[m[32mif opcion == "catalina":[m
+[32m+[m[32m     print (catalina)[m
